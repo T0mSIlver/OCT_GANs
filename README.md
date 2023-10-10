@@ -2,8 +2,8 @@
 Improving the diagnosis of retinal diseases through machine learning OCT image generation.
 
 ## Partners
-- [French startup Temeoo](https://www.temeoo.fr/)
 - [CRIStAL](https://www.cristal.univ-lille.fr/spip.php?page=rubrique&id_rubrique=1) (Lille Computer Science, Signal and Automation Research Center)
+- [Temeoo](https://www.temeoo.fr/)
 - [The Pitié Salpêtrière University Hospital](https://pitiesalpetriere.aphp.fr/hopital-universitaire-pitie-salpetriere/), Paris
 
 ## Objective
