@@ -34,12 +34,12 @@ progress in the field of retinopathy and medical imaging.
 #### Results :
 Examples of generated images at a definition of 256 by 256 pixels :
 
-![example 1](/generated_images/v11/img_0.png)
-![example 2](/generated_images/v11/img_6.png)
-![example 3](/generated_images/v11/img_9.png)
-![example 4](/generated_images/v11/img_10.png)
-![example 5](/generated_images/v11/img_11.png)
-![example 6](/generated_images/v11/img_14.png)
+![example 1](ProGAN/generated_images/v11/img_0.png)
+![example 2](ProGAN/generated_images/v11/img_6.png)
+![example 3](ProGAN/generated_images/v11/img_9.png)
+![example 4](ProGAN/generated_images/v11/img_10.png)
+![example 5](ProGAN/generated_images/v11/img_11.png)
+![example 6](ProGAN/generated_images/v11/img_14.png)
 
 Examples of real images :
 
