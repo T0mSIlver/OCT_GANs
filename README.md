@@ -25,12 +25,10 @@ This project will assist in overcoming the lack of real retinal OCT images by pr
 powerful tool for generating high-quality synthetic images, therefore contributing to achieving 
 progress in the field of retinopathy and medical imaging.
 
-## Method
+## Methods
 
-### 1st method : GANs
-- Original GAN
-- DCGAN
-- ProGAN
+### 1. ProGAN DRUSEN OCT generation
+The goal is to produce DRUSEN-affected OCT images.
 #### Results :
 Examples of generated images at a definition of 256 by 256 pixels :
 
@@ -44,3 +42,7 @@ Examples of generated images at a definition of 256 by 256 pixels :
 Examples of real images :
 
 ![example real](oct_drusen_sample.png)
+
+### ***WIP*** 2. : pix2pix DFE to OCT
+The goal is to map dilated fundus examination (DFE) images to OCT images.
+We use a training dataset where DFEs are mapped to corresponding OCTs.
