@@ -44,5 +44,14 @@ Examples of real images :
 ![example real](oct_drusen_sample.png)
 
 ### ***WIP*** 2. : pix2pix DFE to OCT
-The goal is to map dilated fundus examination (DFE) images to OCT images.
+The goal is to map dilated fundus examination (DFE) images to OCT images in order to enhance the diagnosis from a DFE image.
 We use a training dataset where DFEs are mapped to corresponding OCTs.
+
+Relevant paper : Wang, Lehan, Weihang Dai, Mei Jin, Chubin Ou, and Xiaomeng Li. [“Fundus-Enhanced Disease-Aware Distillation Model for Retinal Disease Classification from OCT Images.”](https://doi.org/10.48550/arXiv.2308.00291) arXiv, August 1, 2023. 
+This paper implements the reverse of what we propose to do. It uses DFE images to complement diagnoses from OCT scans. Moreover, DFE and OCT are **not** paired during training which lessens the data requirements to train the model. We'll study the feasibility of reversing the model to complement DFE images with OCT scans. The reasoning of the paper is that OCT scans and DFE images are complementary. We'll have to test that hypothesis as well. 
+
+Another possibilitky is using pix2pix wiht horses = DFE and zebra = OCT and see if results are meaningful.
+Maybe StyleGAN could help explore the intra-pathology distribution.
+
+
+
