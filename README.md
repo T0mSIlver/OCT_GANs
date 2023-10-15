@@ -29,6 +29,7 @@ progress in the field of retinopathy and medical imaging.
 
 ### 1. ProGAN DRUSEN OCT generation
 The goal is to produce DRUSEN-affected OCT images.
+I recommend you check out the notebooks in the directory which are also available on kaggle and colab. They're quite detailed.
 #### Results :
 Examples of generated images at a definition of 256 by 256 pixels :
 
