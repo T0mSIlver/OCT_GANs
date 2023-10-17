@@ -48,8 +48,10 @@ Examples of real images :
 ### 2. : cycleGAN DFE to OCT
 Quick exploration of the paper model architecture. Implementation at 256x256 pixels. Mixed results after training for a few epochs. 
 Maybe need deeper training ? I'll explore pix2pix in the meantime to try to reproduce results.
+
 Back to cycleGAN : I trained for 10 epochs on 2000 images and got way better results (learning rate = 1e-5 different than in the paper = 2e-4)
 DFE to OCT looks better than the opposite.
+
 I saved the weights but I may not reuse them. Let's allow the model to run on two GPUs and train on kaggle with the paper learning rate.
 Note : global loss was still decreasing (not identity mapping loss but we set lambda_identity to 0)
 
