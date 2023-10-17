@@ -44,9 +44,15 @@ Examples of real images :
 
 ![example real](oct_drusen_sample.png)
 
-### ***WIP*** 2. : pix2pix DFE to OCT
+### 2. : cycleGAN DFE to OCT
+Quick exploration of the paper model architecture. Implementation at 256x256 pixels. Mixed results after training for a few epochs. 
+Maybe need deeper training ? I'll explore pix2pix in the meantime to try to reproduce results.
+
+
+### ***WIP*** 3. : pix2pix DFE to OCT
 The goal is to map dilated fundus examination (DFE) images to OCT images in order to enhance the diagnosis from a DFE image.
 We use a training dataset where DFEs are mapped to corresponding OCTs.
+We'll try to get coherent images that are at least 256px.
 
 Relevant paper : Wang, Lehan, Weihang Dai, Mei Jin, Chubin Ou, and Xiaomeng Li. [“Fundus-Enhanced Disease-Aware Distillation Model for Retinal Disease Classification from OCT Images.”](https://doi.org/10.48550/arXiv.2308.00291) arXiv, August 1, 2023. 
 This paper implements the reverse of what we propose to do. It uses DFE images to complement diagnoses from OCT scans. Moreover, DFE and OCT are **not** paired during training which lessens the data requirements to train the model. We'll study the feasibility of reversing the model to complement DFE images with OCT scans. The reasoning of the paper is that OCT scans and DFE images are complementary. We'll have to test that hypothesis as well. 
