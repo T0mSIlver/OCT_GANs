@@ -43,7 +43,7 @@ Examples of generated images at a definition of 256 by 256 pixels :
 
 Examples of real images :
 
-![example real](oct_drusen_sample.png)
+![example real](ProGAN/oct_drusen_sample.png)
 
 ### 2. : cycleGAN DFE to OCT
 Quick exploration of the paper model architecture. Implementation at 256x256 pixels. Mixed results after training for a few epochs. 
