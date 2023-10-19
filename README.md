@@ -53,7 +53,8 @@ Back to cycleGAN : I trained for 10 epochs on 2000 images and got way better res
 DFE to OCT looks better than the opposite.
 
 I saved the weights but I may not reuse them. Let's allow the model to run on two GPUs and train on kaggle with the paper learning rate.
-Note : global loss was still decreasing (not identity mapping loss but we set lambda_identity to 0)
+Note : global loss was still decreasing (not identity mapping loss but we set lambda_identity to 0).
+After training for several more epochs on 20000 samples, results do not look very promising. Maybe I should use the identity loss. 
 
 
 ### ***WIP*** 3. : pix2pix DFE to OCT
@@ -63,6 +64,7 @@ We'll try to get coherent images that are at least 256px.
 
 Relevant paper : Wang, Lehan, Weihang Dai, Mei Jin, Chubin Ou, and Xiaomeng Li. [“Fundus-Enhanced Disease-Aware Distillation Model for Retinal Disease Classification from OCT Images.”](https://doi.org/10.48550/arXiv.2308.00291) arXiv, August 1, 2023. 
 This paper implements the reverse of what we propose to do. It uses DFE images to complement diagnoses from OCT scans. Moreover, DFE and OCT are **not** paired during training which lessens the data requirements to train the model. We'll study the feasibility of reversing the model to complement DFE images with OCT scans. The reasoning of the paper is that OCT scans and DFE images are complementary. We'll have to test that hypothesis as well. 
+This paper implements very interesting loss functions which use the KL divergence. The concepts they develop are class similarity alignment and class ...
 
 Another possibility is using pix2pix with horses = DFE and zebra = OCT (just as in the Centrale paper) and see if results are meaningful.
 Maybe StyleGAN could help explore the intra-pathology distribution.
