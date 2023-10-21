@@ -61,6 +61,7 @@ After training for several more epochs on 20000 samples, results do not look ver
 The goal is to map dilated fundus examination (DFE) images to OCT images in order to enhance the diagnosis from a DFE image.
 We use a training dataset where DFEs are mapped to corresponding OCTs.
 We'll try to get coherent images that are at least 256px.
+This is the resolution the Centrale paper achieved. It is yet left to be seen whether using a more advanced network could yoeld coherent results. There is more fundus data available but OCT is more accurate with predicting pathologies. The two may be complementary as well.
 
 ### 4. Knowledge distillation
 I'll implement various knowledge distillation techniques where the teacher model will be trained on OCT images and the student on fundus images.
